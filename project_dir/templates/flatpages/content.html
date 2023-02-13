@@ -1,0 +1,14 @@
+<!-- Указание Django использовать шаблон flatpages/pattern.html в качестве основы для этого шаблона. -->
+{% extends 'flatpages/pattern.html' %}
+
+<!-- Определение заголовка страницы. -->
+{% block title %}
+    {{ flatpage.title }}
+{% endblock title %}
+
+<!-- Определение блока контента в шаблоне. -->
+{% block content %}
+    <h1>{{ flatpage.title }}</h1>
+    <hr>
+    <h3>{{ flatpage.content }}</h3>
+{% endblock content %}

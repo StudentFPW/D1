@@ -1,0 +1,8 @@
+<!-- Указание Django использовать шаблон flatpages/pattern.html в качестве основы для этого шаблона. -->
+{% extends 'flatpages/for_page2.html' %}
+
+<!-- Определение блока контента в шаблоне. -->
+{% block content %}
+    <h3>{{ flatpage.content }}</h3>
+    <hr>
+{% endblock content %}
